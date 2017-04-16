@@ -31,7 +31,7 @@
 	color: #6699CC;
 	/*#CDD3DE*/
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 48px;
 	text-transform: lowercase;
 	text-align: center;
 }
@@ -277,16 +277,29 @@
     100% { opacity:1; }
 }
 
+/* End of Typed.js */
+
 #terminal {
 	display: inline-block;
 }
 
+.arrow-container {
+	text-align: center;
+	position: relative;
+}
+
+.arrow {
+	color: #ffffff;
+	cursor: pointer;
+}
+
 .terminal-container {
 	width: 100%;
+	min-height: 100%;
 	background-color: #99C794;
 	padding-left: 7.5%;
 	padding-right: 7.5%;
-	padding-bottom: 5%;
+	padding-bottom: 10%;
 }
 
 .terminal-top {
@@ -294,7 +307,7 @@
 	background-color: #D8DEE9;
 	height: 25px;
 	margin-bottom: 0px;
-	margin-top: 5%;
+	margin-top: 10%;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
