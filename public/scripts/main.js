@@ -1,5 +1,7 @@
-var cmd = ["whoami ^700", "echo $SCHOOL &amp;&amp; echo $CLASS ^700", "cat interests.txt ^700"]
-var results = ["Robert Simari", "Notre Dame <br> 2018", "Golfing, Hackathons, Teaching"]
+var cmd = ["whoami ^1000", "printenv | tail -n 2", "cat interests.txt ^1000"]
+// var cmd = ["whoami ^1000", "echo $SCHOOL &amp;&amp; echo $CLASS ^1000", "cat interests.txt ^1000"]
+// add command that does something to the screen like scrolling (that would be dope)
+var results = ["Robert Simari", "SCHOOL=Notre Dame <br> CLASS=2018", "Golfing, Hackathons, Teaching"]
 
 var counter = 0
 
@@ -13,7 +15,7 @@ function startType(el) {
 	Typed.new(el, {
 		// counter / 2 >> 0 is equivalent to integer division
 		strings: [cmd[counter / 2 >> 0] + "<br>"],
-		typeSpeed: 0,
+		typeSpeed: 150,
 		onStringTyped: function() {
 			// create new element for response text
 			var prompt = document.createElement("span")

@@ -17,8 +17,8 @@ func main() {
  	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./public"))))
 
 	http.HandleFunc("/", indexHandler)
-	fmt.Println("server listening on port 8080...")
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("server listening on port 8081...")
+	http.ListenAndServe(":8081", nil)
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) (error) {
