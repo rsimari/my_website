@@ -1,4 +1,4 @@
-var cmd = ["whoami ^1000", "printenv | tail -n 2", "cat interests.txt ^1000"]
+var cmd = ["whoami ^1000", "printenv | tail -n 2", "cat hobbies.txt ^1000"]
 // var cmd = ["whoami ^1000", "echo $SCHOOL &amp;&amp; echo $CLASS ^1000", "cat interests.txt ^1000"]
 // add command that does something to the screen like scrolling (that would be dope)
 var results = ["Robert Simari", "SCHOOL=Notre Dame <br> CLASS=2018", "Golfing, Hackathons, Teaching"]
